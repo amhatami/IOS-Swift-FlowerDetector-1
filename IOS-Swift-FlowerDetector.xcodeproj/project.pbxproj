@@ -12,6 +12,8 @@
 		FABD8AE220BD52A7005168D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABD8AE020BD52A7005168D7 /* Main.storyboard */; };
 		FABD8AE420BD52A8005168D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABD8AE320BD52A8005168D7 /* Assets.xcassets */; };
 		FABD8AE720BD52A8005168D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FABD8AE520BD52A8005168D7 /* LaunchScreen.storyboard */; };
+		FABD8AF020BD54A5005168D7 /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABD8AEF20BD54A5005168D7 /* Extentions.swift */; };
+		FABD8AF220BD552C005168D7 /* FlowerClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FABD8AF120BD552C005168D7 /* FlowerClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FABD8AE320BD52A8005168D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FABD8AE620BD52A8005168D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FABD8AE820BD52A8005168D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FABD8AEF20BD54A5005168D7 /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		FABD8AF120BD552C005168D7 /* FlowerClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FlowerClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				FABD8ADC20BD52A7005168D7 /* AppDelegate.swift */,
+				FABD8AEE20BD5490005168D7 /* Helper */,
 				FABD8ADE20BD52A7005168D7 /* ViewController.swift */,
+				FABD8AF120BD552C005168D7 /* FlowerClassifier.mlmodel */,
 				FABD8AE020BD52A7005168D7 /* Main.storyboard */,
 				FABD8AE320BD52A8005168D7 /* Assets.xcassets */,
 				FABD8AE520BD52A8005168D7 /* LaunchScreen.storyboard */,
 				FABD8AE820BD52A8005168D7 /* Info.plist */,
 			);
 			path = "IOS-Swift-FlowerDetector";
+			sourceTree = "<group>";
+		};
+		FABD8AEE20BD5490005168D7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FABD8AEF20BD54A5005168D7 /* Extentions.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FABD8AF220BD552C005168D7 /* FlowerClassifier.mlmodel in Sources */,
 				FABD8ADF20BD52A7005168D7 /* ViewController.swift in Sources */,
 				FABD8ADD20BD52A7005168D7 /* AppDelegate.swift in Sources */,
+				FABD8AF020BD54A5005168D7 /* Extentions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
